@@ -1,0 +1,1 @@
+<h1>Bienvenido al sistema Banco Platinum</h1>
