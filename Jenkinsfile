@@ -38,12 +38,12 @@ pipeline {
       post {
         always {
           junit 'target/surefire-reports/*.xml'
-          publishHTML(target: [
-            reportName: 'Cucumber',
-            reportDir: 'target',
-            reportFiles: 'cucumber-report.html',
-            keepAll: true, alwaysLinkToLastBuild: true
-          ])
+          //publishHTML(target: [
+           // reportName: 'Cucumber',
+            //reportDir: 'target',
+            //reportFiles: 'cucumber-report.html',
+            //keepAll: true, alwaysLinkToLastBuild: true
+          //])
         }
       }
     }
