@@ -17,7 +17,7 @@ pipeline {
       steps {
         checkout([$class: 'GitSCM',
           branches: [[name: '*/main']],
-          userRemoteConfigs: [[url: 'https://github.com/<tu-usuario>/CtaCorriente.git', credentialsId: 'github-creds']]
+          userRemoteConfigs: [[url: 'https://github.com/leo0370/Proyecto-base-CtaCorriente.git', credentialsId: 'github-creds']]
         ])
       }
     }
