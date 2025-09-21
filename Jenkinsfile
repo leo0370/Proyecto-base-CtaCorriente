@@ -8,7 +8,7 @@ pipeline {
 
   environment {
     // Configurado en Jenkins: Manage Jenkins > System > JFrog
-    ARTIFACTORY_SERVER = 'Artifactory-Server'
+    ARTIFACTORY_SERVER = 'artifactory-server'
     ARTIFACTORY_REPO   = 'libs-release-local'
   }
 
