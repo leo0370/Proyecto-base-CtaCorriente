@@ -23,7 +23,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        sh label: 'Build mvn', script: 'mvn -B -DskipTests clean package'
+        bat label: 'Build mvn', script: 'mvn -B -DskipTests clean package'
       }
       post {
         success {
@@ -33,7 +33,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sh 'mvn -B test'
+        bat 'mvn -B test'
       }
       post {
         always {
